@@ -1,0 +1,12 @@
+body {
+  background-image: url("../img/background_images/golf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#register-card-section,
+#login-card-section {
+  width: 28rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}

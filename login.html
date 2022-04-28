@@ -14,62 +14,48 @@
     />
 
     <title>Log in Page</title>
-    <style>
-      body {
-        background-image: url("./images/golf.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
-      h1 {
-        text-align: center;
-      }
-
-      #card-section {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/auth.css" />
+    <script src="./script/script.js"></script>
   </head>
   <body>
     <div
-      id="card-section"
-      class="text-light card d-flex align-items-center justify-content-center mx-auto position-absolute top-50 start-50 translate-middle"
-      style="width: 28rem"
+      id="login-card-section"
+      class="text-light card d-flex align-items-center justify-content-center mx-auto position-absolute top-50 start-50 translate-middle p-5"
     >
+      <h1>Dream Club</h1>
       <form class="p-4">
         <div class="mb-3">
-          <h1>Dream Club</h1>
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
+          <label for="email" class="form-label">Email address</label>
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
+            id="email"
             aria-describedby="emailHelp"
+            placeholder="example@email.com"
           />
-          <div id="emailHelp" class="text-light form-text">
-            We'll never share your email with anyone else.
-          </div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <label for="password" class="form-label">Password</label>
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="password"
+            placeholder="Enter password"
             required
           />
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Keep log in</label
-          >
+          <input type="checkbox" class="form-check-input" id="check-log" />
+          <label class="form-check-label" for="check-log">Keep logged in</label>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary">log in</button>
+          <button type="submit" class="btn btn-primary">Login</button>
         </div>
+
+        <p class="mt-3">
+          Don't have an account?
+          <a href="register.html">Register</a>
+        </p>
       </form>
     </div>
 
