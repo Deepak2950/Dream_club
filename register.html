@@ -18,11 +18,13 @@
     <script src="./script/script.js"></script>
   </head>
   <body>
+    <!-- d-flex align-items-center justify-content-center mx-auto position-absolute top-50 start-50 translate-middle -->
     <div
       id="register-card-section"
-      class="text-light card p-5 d-flex align-items-center justify-content-center mx-auto position-absolute top-50 start-50 translate-middle"
+      class="text-light card p-5 d-flex align-items-center mx-auto"
     >
       <h1 class="pt-4">Dream Club</h1>
+      <p id="register-as">Register as Player</p>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item bg-dark" role="presentation">
           <button
@@ -226,9 +228,9 @@
             </div>
           </form>
         </div>
-        <p>
-          Already have an account?
-          <a href="login.html">Login</a>
+        <p class="d-flex justify-content-center">
+          <span>Already have an account?</span>
+          <a class="mx-2 text-light" href="login.html">Login</a>
         </p>
       </div>
     </div>
