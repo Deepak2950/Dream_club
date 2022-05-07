@@ -10,3 +10,7 @@ body {
   width: 28rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+#register-card-section {
+  margin: 60px 0px;
+}
