@@ -28,7 +28,7 @@ let clubs = [
     "./../../img/solid.png",
     "this is good club1",
     [
-      getVacancy("Football", 2),
+      getVacancy("Football", 9),
       getVacancy("Golf", 12),
       getVacancy("Cricket", 3),
     ]
@@ -39,11 +39,7 @@ let clubs = [
     "address of club2",
     "./../../img/solid.png",
     "this is good club2",
-    [
-      getVacancy("Football", 2),
-      getVacancy("Golf", 12),
-      getVacancy("Cricket", 3),
-    ]
+    [getVacancy("Football", 2), getVacancy("Cricket", 3)]
   ),
   getClubJson(
     "club3",

@@ -16,7 +16,8 @@ function getClubCardAsHtml(
   clubAddress,
   clubImage,
   clubDescription,
-  vacancy
+  vacancy,
+  index
 ) {
   const vacancyFull = getVacancyContentAsHtml(vacancy);
 
@@ -60,15 +61,15 @@ function getClubCardAsHtml(
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseVacancy"
+              data-bs-target="#collapseVacancy${index}"
               aria-expanded="true"
-              aria-controls="collapseVacancy"
+              aria-controls="collapseVacancy${index}"
             >
               Vacancy
             </button>
           </h2>
           <div
-            id="collapseVacancy"
+            id="collapseVacancy${index}"
             class="accordion-collapse collapse"
             aria-labelledby="vacancy_head"
             data-bs-parent="#vacancy_accordion"
@@ -91,8 +92,8 @@ function setClubs() {
   const clubsSection = document.getElementById("clubs-section");
   let clubsSectionContent = "";
 
-  for (let i = 0; i < clubs.length; i++) {
-    const currentClub = clubs[i];
+  for (let index = 0; index < clubs.length; index++) {
+    const currentClub = clubs[index];
 
     const cardHTML = getClubCardAsHtml(
       currentClub.clubName,
@@ -100,7 +101,8 @@ function setClubs() {
       currentClub.clubAddress,
       currentClub.clubImage,
       currentClub.clubDescription,
-      currentClub.vacancy
+      currentClub.vacancy,
+      index
     );
     clubsSectionContent = clubsSectionContent + cardHTML;
   }
