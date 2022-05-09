@@ -12,7 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <!-- css link  -->
+    <link rel="stylesheet" href="./styles/manager.css" />
     <title>Dream Manager</title>
     <!-- icons link  -->
     <script
@@ -20,6 +21,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="./script/clubs-data.js"></script>
     <script src="./script/member-dashboard-script.js"></script>
   </head>
   <body>
@@ -92,26 +94,7 @@
     <!-- nav bar end  -->
 
     <!-- card  -->
-    <div class="card mt-5 mx-auto" style="max-width: 80%">
-      <div class="card-header"><h3>Club Name</h3></div>
-      <div class="card-body">
-        <h5 class="card-title">Players</h5>
-        <ul id="player-card-list" class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
-        <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
-        </p>
-      </div>
-    </div>
+    <div id="club-card"></div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

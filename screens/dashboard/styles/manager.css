@@ -1,0 +1,30 @@
+.row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#scroll .card {
+  /*float: left;*/
+  max-width: 300px;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  /* flex-basis: 33.333%;
+  flex-grow: 0;
+  flex-shrink: 0; */
+}
+
+.card > img {
+  margin: auto;
+  margin-bottom: 0.75rem;
+  width: 150px;
+  height: 150px;
+}
+
+.card-text {
+  font-size: ;
+}
