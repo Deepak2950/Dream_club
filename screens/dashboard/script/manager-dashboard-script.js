@@ -54,7 +54,7 @@ function getClubPlayersAsHtml(players) {
         class="img-responsive rounded-circle"
         src="${pImage}"
       />
-      <h6>${name}</h6>
+      <h4>${name}</h4>
       <p>Age : ${age}</p>
       <p>Role : ${role}</p>
     </div>
@@ -75,11 +75,17 @@ function getClubPlayersAsHtml(players) {
 function getClubTagsAsHtml(sports) {
   let content = "";
   for (let i = 0; i < sports.length; i++) {
-    let liContent = `
+    let liContent =
+      sports[i].name == sports[currentSportsIndex].name
+        ? `
     <li class="nav-item" data-index="${i}" >
-      <a class="nav-link" aria-current="page" href="#">${sports[i].name}</a>
+      <a class="nav-link active" aria-current="page" href="#">${sports[i].name}</a>
     </li>
-    `;
+    `
+        : `<li class="nav-item" data-index="${i}" >
+    <a class="nav-link" aria-current="page" href="#">${sports[i].name}</a>
+  </li>
+  `;
     content = content + liContent;
   }
 

@@ -13,6 +13,7 @@
   padding: 0.75rem;
   margin-bottom: 2rem;
   border: 0;
+  text-align: center;
   /* flex-basis: 33.333%;
   flex-grow: 0;
   flex-shrink: 0; */
@@ -25,6 +26,6 @@
   height: 150px;
 }
 
-.card-text {
-  font-size: ;
+footer {
+  height: 200px;
 }

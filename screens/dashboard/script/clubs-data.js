@@ -50,16 +50,16 @@ let clubs = [
     ],
     [
       getSports("Cricket", [
-        getPlayer("player1", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle2", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle3", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle4", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle5", "./../../img/solid.png"),
-        getPlayer("player1", "118", "ROle6", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role3", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role4", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role5", "./../../img/solid.png"),
+        getPlayer("player1", "118", "Role6", "./../../img/solid.png"),
       ]),
       getSports("Football", [
-        getPlayer("player1ff", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1ff", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1ff", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1ff", "18", "Role2", "./../../img/solid.png"),
       ]),
     ]
   ),
@@ -72,12 +72,12 @@ let clubs = [
     [getVacancy("Football", 2), getVacancy("Cricket", 3)],
     [
       getSports("Cricket", [
-        getPlayer("player1ccc", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1ccc", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1ccc", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1ccc", "18", "Role2", "./../../img/solid.png"),
       ]),
       getSports("Football", [
-        getPlayer("player1", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
       ]),
     ]
   ),
@@ -94,12 +94,12 @@ let clubs = [
     ],
     [
       getSports("Cricket", [
-        getPlayer("player1ccscww", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1cwcwcwc", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1ccscww", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1cwcwcwc", "18", "Role2", "./../../img/solid.png"),
       ]),
       getSports("Football", [
-        getPlayer("player1", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
       ]),
     ]
   ),
@@ -116,12 +116,12 @@ let clubs = [
     ],
     [
       getSports("Cricket", [
-        getPlayer("player1", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
       ]),
       getSports("Football", [
-        getPlayer("player1", "18", "ROle1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "ROle2", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
+        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
       ]),
     ]
   ),
