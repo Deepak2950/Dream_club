@@ -3,7 +3,7 @@ function getVacancyContentAsHtml(vacancy) {
   for (var i = 0; i < vacancy.length; i++) {
     var vacancyContent = `<button type="button" class="btn btn-secondary mx-1">
                     ${vacancy[i].sport}
-                    <span class="badge bg-light text-dark mx-2 my-1">${vacancy[i].nVacancy}</span>
+                    <span class="badge bg-primary text-light mx-2 my-1">${vacancy[i].nVacancy}</span>
                   </button>`;
     vacancyFull = vacancyFull + vacancyContent;
   }
@@ -27,14 +27,15 @@ function getClubCardAsHtml(
     <div class="card mt-5 mx-auto" style="max-width: 80%; background-color: rgb(167, 173, 168);">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-3 my-auto">
+        <div class="col-md-3 my-auto px-3">
           <img
             src="${clubImage}"
             class="img-fluid rounded-circle mx-auto my-auto d-block"
             alt="Club logo"
             style="max-width: 100px"
           />
-          <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-dark">View Club</button>
+            <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-light">View Club</button>
+            <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-light">Visit Website</button>
         </div>
         <div class="col-md-9">
           <div class="card-body">
