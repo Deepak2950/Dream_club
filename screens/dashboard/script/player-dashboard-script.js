@@ -27,7 +27,7 @@ function getClubCardAsHtml(
     <div class="card mt-5 mx-auto" style="max-width: 80%; background-color: rgb(167, 173, 168);">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-2" style="background-color: ">
+        <div class="col-md-3 my-auto">
           <img
             src="${clubImage}"
             class="img-fluid rounded-circle mx-auto my-auto d-block"
@@ -36,21 +36,19 @@ function getClubCardAsHtml(
           />
           <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-dark">View Club</button>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div class="card-body">
-            <h5 class="card-title">${clubName}</h5>
-            <a class="card-title">${clubWebsite}</a>
+            <h3 class="card-title my-3">${clubName}</h3>
             <h6 class="card-title pt-2">Address</h6>
+            <p>
+              ${clubAddress}
+            </p>
+            <h6 class="card-title pt-2">Description</h6>
             <p>
               ${clubAddress}
             </p>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <p class="card-text">
-            ${clubDescription}
-        </p>
       </div>
     </div>
     <!-- card footer -->
