@@ -3,7 +3,7 @@ function getVacancyContentAsHtml(vacancy) {
   for (var i = 0; i < vacancy.length; i++) {
     var vacancyContent = `<button type="button" class="btn btn-secondary mx-1">
                     ${vacancy[i].sport}
-                    <span class="badge bg-light text-dark">${vacancy[i].nVacancy}</span>
+                    <span class="badge bg-light text-dark mx-2 my-1">${vacancy[i].nVacancy}</span>
                   </button>`;
     vacancyFull = vacancyFull + vacancyContent;
   }
@@ -24,7 +24,7 @@ function getClubCardAsHtml(
   console.log(vacancyFull);
 
   const content = `
-    <div class="card mt-5 mx-auto" style="max-width: 80%">
+    <div class="card mt-5 mx-auto" style="max-width: 80%; background-color: rgb(167, 173, 168);">
     <div class="card-body">
       <div class="row">
         <div class="col-md-2" style="background-color: ">
@@ -34,7 +34,7 @@ function getClubCardAsHtml(
             alt="Club logo"
             style="max-width: 100px"
           />
-          <button class="mt-3 btn btn-secondary btn-sm d-flex mx-auto">View Club</button>
+          <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-dark">View Club</button>
         </div>
         <div class="col-md-10">
           <div class="card-body">
@@ -59,12 +59,13 @@ function getClubCardAsHtml(
         <div class="accordion-item">
           <h2 class="accordion-header" id="vacancy_head">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed text-light"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseVacancy${index}"
               aria-expanded="true"
               aria-controls="collapseVacancy${index}"
+              style="background-color: rgb(118, 122, 118);"
             >
               Vacancy
             </button>
@@ -75,7 +76,7 @@ function getClubCardAsHtml(
             aria-labelledby="vacancy_head"
             data-bs-parent="#vacancy_accordion"
           >
-            <div class="accordion-body">
+            <div class="accordion-body" style="background-color: rgb(167, 173, 168);">
              ${vacancyFull} 
             </div>
           </div>
