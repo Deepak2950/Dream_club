@@ -49,7 +49,7 @@ function getClubPlayersAsHtml(players) {
     const { name, age, role, pImage } = player;
 
     const cardContent = `
-    <div class="card">
+    <div class="card m-2 text-light" style="width: 200px; background-color: rgb(118, 122, 118); border-radius: 10px;" >
       <img
         class="img-responsive rounded-circle"
         src="${pImage}"
@@ -79,11 +79,11 @@ function getClubTagsAsHtml(sports) {
       sports[i].name == sports[currentSportsIndex].name
         ? `
     <li class="nav-item" data-index="${i}" >
-      <a class="nav-link active" aria-current="page" href="#">${sports[i].name}</a>
+      <a class="nav-link bg-dark text-light active" aria-current="page" href="#">${sports[i].name}</a>
     </li>
     `
         : `<li class="nav-item" data-index="${i}" >
-    <a class="nav-link" aria-current="page" href="#">${sports[i].name}</a>
+    <a class="nav-link text-dark" aria-current="page" href="#">${sports[i].name}</a>
   </li>
   `;
     content = content + liContent;
@@ -100,7 +100,7 @@ function getClubCardAsHtml(club) {
   const currentSports = club.sports[currentSportsIndex];
 
   const content = `
-  <div class="card mt-5 mx-auto" style="max-width: 80%">
+  <div class="card mt-5 mx-auto " style="max-width: 80%; background-color: rgb(167, 173, 168);" >
       <div class="card-header">
         <h3>${club.clubName}</h3>
         <p class="mt-3">${club.clubDescription}</p>
