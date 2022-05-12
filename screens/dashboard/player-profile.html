@@ -12,6 +12,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/styles.css"></link>
 
     <title>Profile</title>
 
@@ -21,9 +28,9 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand mx-3" href="#">
           <img
             class="img-fluid rounded-circle mx-auto my-auto d-block"
             src="./../../img/solid.png"
@@ -44,47 +51,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
                 <i class="fa-solid fa-house"></i>
                 Home
               </a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-              </li> -->
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="#">
+                <i class="fa-solid fa-user"></i>
+                Profile
+              </a>
+            </li>
           </ul>
-          <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul> -->
+
           <form class="d-flex">
             <input
               class="form-control me-2"
@@ -92,27 +73,22 @@
               placeholder="Search..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-primary" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-          <ul class="navbar-nav me- mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-2 me- mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#"
-                >Notification
+              <a class="nav-link active" href="#">
+                Notification
                 <span class="badge bg-primary">4</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <i class="fa-solid fa-user"></i>
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
+
+            <li class="nav-item mx-3">
               <a class="nav-link active" href="#">
                 <i class="fa-solid fa-right-from-bracket"></i>
-                Log-out
+                Logout
               </a>
             </li>
           </ul>
@@ -122,7 +98,19 @@
 
     <!-- navbar end  -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <footer class="footer-basic">
+      <div class="social">
+        <a href="#"><i class="icon ion-social-facebook"></i></a>
+        <a href="#"><i class="icon ion-social-instagram"></i></a>
+        <a href="#"><i class="icon ion-social-twitter"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+      </ul>
+      <p class="copyright">Dream Club © 2022</p>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
