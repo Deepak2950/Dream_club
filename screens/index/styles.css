@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(225, 232, 226);
+}
+
+#main {
+  padding: 140px 0px;
+}
+
+#manager-features .card,
+#player-features .card {
+  margin: 10px;
+}
