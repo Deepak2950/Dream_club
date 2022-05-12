@@ -1,4 +1,4 @@
-function setHtml() {
+function setCustomFooter() {
   const content = `
     <!-- about us modal -->
 <div
@@ -150,7 +150,4 @@ function setHtml() {
 
   document.getElementById("custom-footer").innerHTML = content;
 }
-
-window.onload = function () {
-  setHtml();
-};
+setCustomFooter();
