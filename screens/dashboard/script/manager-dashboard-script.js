@@ -33,7 +33,7 @@ function addOnClickToPlayerTabs() {
 }
 
 ///// GLOBAL DATA
-let currentClubName = "club1";
+let currentClubName = clubs[0].clubName;
 let currentClub;
 let currentSportsIndex = 0;
 
