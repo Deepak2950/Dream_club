@@ -59,7 +59,7 @@ function getClubCardAsHtml(
             </p>
             <h6 class="card-title pt-2">Description</h6>
             <p>
-              ${clubAddress}
+              ${clubDescription}
             </p>
           </div>
         </div>

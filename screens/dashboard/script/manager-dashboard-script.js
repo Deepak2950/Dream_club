@@ -125,7 +125,7 @@ function getClubCardAsHtml(club) {
   const currentSports = club.sports[currentSportsIndex];
 
   const content = `
-  <div class="card mt-5 mx-auto " style="max-width: 80%; background-color: rgb(167, 173, 168);" >
+  <div class="card mt-5 pt-3 mx-auto " style="max-width: 80%; background-color: rgb(167, 173, 168);" >
       <div class="card-header">
         <h3>${club.clubName}</h3>
         <p class="mt-3">${club.clubDescription}</p>
