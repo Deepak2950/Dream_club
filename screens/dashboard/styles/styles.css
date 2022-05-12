@@ -2,6 +2,11 @@ nav {
   background-color: rgb(206, 214, 207);
 }
 
+nav a u:hover,
+nav a span:hover {
+  color: rgb(13, 110, 253);
+}
+
 body {
   background-color: rgb(225, 232, 226);
 }
@@ -58,4 +63,15 @@ footer {
 
 .carousel-caption {
   z-index: 2;
+}
+
+#players .card {
+  background-color: rgb(118, 122, 118);
+  border-radius: 30px;
+}
+
+#players .card:hover {
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  transition: 500ms;
 }

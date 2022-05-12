@@ -52,7 +52,7 @@ function getClubPlayersAsHtml(players) {
     const { name, age, role, pImage } = player;
 
     const cardContent = `
-    <div class="card m-2 text-light" style="width: 200px; background-color: rgb(118, 122, 118); border-radius: 10px;" >
+    <div class="card m-2 text-light" style="width: 200px;" >
       <img
         class="img-responsive rounded-circle"
         src="${pImage}"
@@ -130,7 +130,7 @@ function getClubCardAsHtml(club) {
         <h3>${club.clubName}</h3>
         <p class="mt-3">${club.clubDescription}</p>
       </div>
-      <div class="card-body">
+      <div class="card-body" id="players">
         ${getClubTagsAsHtml(club.sports)}
         <h5 class="card-title mt-4">Players: ${currentSports.name}</h5>
         <!-- scroll  -->
