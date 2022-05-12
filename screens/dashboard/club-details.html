@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
 
-    <title>Dream Manager</title>
+    <title>Club Details</title>
     <!-- icons link  -->
     <script
       src="https://kit.fontawesome.com/d8859cd9c2.js"
@@ -29,12 +29,12 @@
     ></script>
 
     <script src="./script/clubs-data.js"></script>
-    <script src="./script/manager-dashboard-script.js"></script>
+    <script src="./script/club-details.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand mx-3" href="#">
           <img
             class="img-fluid rounded-circle mx-auto my-auto d-block"
             src="./../../img/solid.png"
@@ -55,42 +55,46 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./player-dashboard.html"
+              >
                 <i class="fa-solid fa-house"></i>
-                <u>Home</u>
+                Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./manager-profile.html">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="./player-profile.html">
                 <i class="fa-solid fa-user"></i>
-                <span>Profile</span>
+                Profile
               </a>
             </li>
-            <form class="d-flex" style="margin-left: 30px">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-primary" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
           </ul>
 
-          <ul class="navbar-nav me- mb-2 mb-lg-0">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav mx-2 me- mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#">
-                Notifications
+                Notification
                 <span class="badge bg-primary">4</span>
               </a>
             </li>
 
             <li class="nav-item mx-3">
-              <a class="nav-link active" href="./../auth/login.html">
+              <a class="nav-link active" href="../auth/login.html">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 Logout
               </a>
@@ -99,7 +103,6 @@
         </div>
       </div>
     </nav>
-    <!-- nav bar end  -->
 
     <!-- card  -->
     <div id="club-card"></div>

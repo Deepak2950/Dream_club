@@ -23,6 +23,10 @@ function getVacancyContentAsHtml(vacancy) {
   return vacancyFull;
 }
 
+function navigateToClub() {
+  window.location.pathname = "./screens/dashboard/club-details.html";
+}
+
 function getClubCardAsHtml(
   clubName,
   clubWebsite,
@@ -47,7 +51,13 @@ function getClubCardAsHtml(
             alt="Club logo"
             style="max-width: 100px"
           />
-            <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-light">View Club</button>
+            <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto 
+              text-light"
+              onclick="navigateToClub()"
+            
+            >
+              View Club
+            </button>
             <button class="mt-3 btn btn-primary btn-sm d-flex mx-auto text-light">Visit Website</button>
         </div>
         <div class="col-md-9">
