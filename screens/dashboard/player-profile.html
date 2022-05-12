@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,10 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
-    
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/styles.css"></link>
-
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Profile</title>
 
     <script
@@ -27,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
@@ -53,7 +49,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./player-dashboard.html">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./player-dashboard.html"
+              >
                 <i class="fa-solid fa-house"></i>
                 Home
               </a>
@@ -97,7 +97,57 @@
     </nav>
 
     <!-- navbar end  -->
+    <div class="container">
+      <div id="playerProfile" class="container">
+        <!-- club card  -->
+        <div class="card mt-5 mx-auto" style="max-width: 80%">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2 d-flex">
+                <img
+                  src="./../../img/solid.png"
+                  class="img-fluid rounded-circle mx-auto my-auto d-block"
+                  alt="Profile img"
+                  style="max-width: 100px"
+                />
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Player name</h5>
+                  <h6 class="card-title">Age : 20</h6>
+                  <h6 class="card-title">Sports : Cricket</h6>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h6 class="card-title pt-2">Email</h6>
+              <p class="card-text">dream.player@email.com</p>
+              <h6 class="card-title pt-2">About</h6>
+              <p class="card-text">
+                Played for Hubli cricket club as a wicket-keeper
+              </p>
+              <h6 class="card-title pt-2">Address</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed
+                aspernatur dolorum quo voluptatem eaque nulla commodi tempora
+                alias explicabo nisi repellendus rem asperiores, rerum autem,
+                voluptates dicta! Ipsum, reiciendis?
+              </p>
+              <button type="button" class="btn btn-primary">
+                <i class="fa-solid fa-pen"></i>
+                Edit profile
+              </button>
+            </div>
+          </div>
+          <!-- card footer -->
 
+          <!-- card body end  -->
+        </div>
+        <!-- card end -->
+      </div>
+    </div>
+
+    <!-- footer  -->
     <footer class="footer-basic">
       <div class="social">
         <a href="#"><i class="icon ion-social-facebook"></i></a>
