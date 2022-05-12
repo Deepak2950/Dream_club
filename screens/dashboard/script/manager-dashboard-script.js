@@ -14,6 +14,9 @@ function removeActiveClassFromPlayerTabs() {
 
 function handlePlayerTabChange(tab) {
   removeActiveClassFromPlayerTabs();
+  if (tab.dataset.index === -1) {
+    return;
+  }
   currentSportsIndex = tab.dataset.index;
   setClub();
 }
@@ -63,6 +66,17 @@ function getClubPlayersAsHtml(players) {
     content = content + cardContent;
   }
 
+  content =
+    content +
+    `
+  <div class="card m-2 text-light" style="width: 200px; background-color: rgb(118, 122, 118); border-radius: 10px;" >
+    <div class="my-auto">
+      <h2>Add Player</h2>
+      <i class="fa fa-plus-circle display-4" aria-hidden="true"></i>
+    </div>
+  </div>
+  `;
+
   return `
   <div id="scroll" class="container">
     <div class="row">
@@ -88,6 +102,17 @@ function getClubTagsAsHtml(sports) {
   `;
     content = content + liContent;
   }
+
+  content =
+    content +
+    `
+  <li class="nav-item" data-index="-1" >
+    <a class="mx-4 nav-link text-light bg-secondary" aria-current="page" href="#">
+      Add
+      <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+    </a>
+  </li>
+  `;
 
   return `
   <ul id="player-card-list" class="nav nav-tabs">
