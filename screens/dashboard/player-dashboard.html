@@ -13,14 +13,12 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
 
-
-    <link rel="stylesheet" href="./styles/styles.css"></link>
-    <link rel="stylesheet" href="./styles/footer.css"></link>
-
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <title>Dream Player</title>
     <!-- icons link  -->
@@ -29,10 +27,7 @@
       crossorigin="anonymous"
     ></script>
 
-    
-    
-    
-<!-- javascript link  -->
+    <!-- javascript link  -->
 
     <script src="./script/clubs-data.js"></script>
     <script src="./script/player-dashboard-script.js"></script>
@@ -68,14 +63,14 @@
                 <u>Home</u>
               </a>
             </li>
-            <li class="nav-item  mx-3">
+            <li class="nav-item mx-3">
               <a class="nav-link active" href="./player-profile.html">
                 <i class="fa-solid fa-user"></i>
                 Profile
               </a>
             </li>
           </ul>
-          
+
           <form class="d-flex">
             <input
               class="form-control me-2"
@@ -94,7 +89,7 @@
                 <span class="badge bg-primary">4</span>
               </a>
             </li>
-          
+
             <li class="nav-item mx-3">
               <a class="nav-link active" href="../auth/login.html">
                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -187,38 +182,122 @@
     </div>
 
     <!-- about us modal -->
-    <div class="modal fade" id="about-us-modal" tabindex="-1" aria-labelledby="about-us-modal-label" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="about-us-modal"
+      tabindex="-1"
+      aria-labelledby="about-us-modal-label"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="about-us-modal-label">About Dream Club</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="about-us-modal-label">
+              About Dream Club
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos provident quisquam reprehenderit, modi officiis illum ut debitis similique quas!
+            <div class="row">
+              <div class="col">
+                <img
+                  src="./../../img/solid.png"
+                  class="img-fluid rounded-circle mx-auto my-auto d-block"
+                  alt="Club logo"
+                  style="max-width: 100px"
+                />
+              </div>
+              <div class="col my-auto">
+                <h5>Dream club team</h5>
+              </div>
+            </div>
+            <div class="text-center">
+              <p class="mt-4">
+                Deepak M B, MCA, RVCE
+                <span>
+                  <button
+                    id="deepak-email-btn"
+                    class="btn btn-sm btn-primary mx-3"
+                    onclick="copyToClipBoard('deepakmb.mca21@rvce.edu.in')"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Copy"
+                  >
+                    <i class="fa-solid fa-copy"></i>
+                  </button>
+                </span>
+              </p>
+              <p class="mt-4" id="deepak-email">
+                Akash Punagin, MCA, RVCE
+                <span>
+                  <button
+                    id="akash-email-btn"
+                    class="btn btn-sm btn-primary mx-3"
+                    onclick="copyToClipBoard('akashep.mca21@rvce.edu.in')"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-trigger="click"
+                    title="Copy"
+                  >
+                    <i class="fa-solid fa-copy"></i>
+                  </button>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- contact us modal -->
-    <div class="modal fade" id="contact-us-modal" tabindex="-1" aria-labelledby="contact-us-modal-label" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="contact-us-modal"
+      tabindex="-1"
+      aria-labelledby="contact-us-modal-label"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="contact-us-modal-label">Contact Dream Club Team</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="contact-us-modal-label">
+              Contact Dream Club Team
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Feedback</label>
-                <textarea class="form-control" id="message-text" placeholder="Enter your feedback here" rows="6"></textarea>
+                <label for="message-text" class="col-form-label"
+                  >Feedback</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  placeholder="Enter your feedback here"
+                  rows="6"
+                ></textarea>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
             <button type="button" class="btn btn-primary btn-sm">Submit</button>
           </div>
         </div>
@@ -233,8 +312,16 @@
       </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="#">Home</a></li>
-        <li class="list-inline-item"><a href="#" data-bs-toggle="modal" data-bs-target="#about-us-modal">About</a></li>
-        <li class="list-inline-item"><a href="#" data-bs-toggle="modal" data-bs-target="#contact-us-modal">Contact Us</a></li>
+        <li class="list-inline-item">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#about-us-modal"
+            >About</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#contact-us-modal"
+            >Contact Us</a
+          >
+        </li>
       </ul>
       <p class="copyright">Dream Club © 2022</p>
     </footer>

@@ -1,3 +1,16 @@
+function copyToClipBoard(copyText) {
+  document.addEventListener(
+    "copy",
+    function (e) {
+      e.clipboardData.setData("text/plain", copyText);
+      e.preventDefault();
+    },
+    true
+  );
+
+  document.execCommand("copy");
+}
+
 function getVacancyContentAsHtml(vacancy) {
   let vacancyFull = "";
   for (var i = 0; i < vacancy.length; i++) {
@@ -113,4 +126,11 @@ function setClubs() {
 
 window.onload = function () {
   setClubs();
+
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 };
