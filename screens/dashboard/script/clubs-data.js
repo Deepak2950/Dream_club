@@ -41,7 +41,7 @@ let clubs = [
     "Kengeri Sports Club",
     "website1",
     "Kengeri, Bangalore",
-    "./../../img/solid.png",
+    "../../img/profile/club1_logo.jpeg",
     "A student organization recognized by the Physical Education and Athletic Department. Formed by individuals with common interests to participate in a sport activity. Governed by same rules and regulations as all student organizations.",
     [
       getVacancy("Football", 9),
@@ -107,7 +107,7 @@ let clubs = [
     "Builders Club",
     "website2",
     "Hebbal, Bangalore, Karnataka",
-    "./../../img/solid.png",
+    "../../img/profile/club_logo2.jpeg",
     "a registered student organization that exists to promote and develop interest in a particular sport or physical activity",
     [getVacancy("Football", 2), getVacancy("Cricket", 3)],
     [
@@ -125,7 +125,7 @@ let clubs = [
     "Yalahanka Champions Club",
     "website3",
     "Yalhanka, Bangalore, Karnataka",
-    "./../../img/solid.png",
+    "../../img/profile/club_logo3.jpeg",
     "Establishments primarily engaged in operating and promoting professional and semiprofessional athletic clubs; promoting athletic events, including amateur; and managing individual professional athletes",
     [
       getVacancy("Football", 2),
@@ -147,7 +147,7 @@ let clubs = [
     "Jayanagar Blasters",
     "website4",
     "Jayanagar, Bangalore, Karnataka",
-    "./../../img/solid.png",
+    "../../img/profile/club_logo5.png",
     "Good Sports helps clubs build a welcoming, family-friendly environment – so you can attract more members. Good Sports will keep you updated on current funding opportunities and give you tips on how to write a winning grant application. In fact, funders often look favourably at Good Sports clubs.",
     [
       getVacancy("Volleyball", 2),
