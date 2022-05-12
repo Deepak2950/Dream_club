@@ -50,12 +50,42 @@ let clubs = [
     ],
     [
       getSports("Cricket", [
-        getPlayer("player1", "18", "Role1", "./../../img/solid.png"),
-        getPlayer("player1", "18", "Role2", "./../../img/solid.png"),
-        getPlayer("player1", "18", "Role3", "./../../img/solid.png"),
-        getPlayer("player1", "18", "Role4", "./../../img/solid.png"),
-        getPlayer("player1", "18", "Role5", "./../../img/solid.png"),
-        getPlayer("player1", "118", "Role6", "./../../img/solid.png"),
+        getPlayer(
+          "Akshar",
+          "18",
+          "Batsman",
+          "./../../img/profile/cricket/cricket_profile.jpg"
+        ),
+        getPlayer(
+          "Harish",
+          "20",
+          "Bowler",
+          "./../../img/profile/cricket/bowler.webp"
+        ),
+        getPlayer(
+          "Raj",
+          "17",
+          "Batsman",
+          "./../../img/profile/cricket/cricket_profile3.jpeg"
+        ),
+        getPlayer(
+          "Dinesh",
+          "16",
+          "All Rounder",
+          "./../../img/profile/cricket/cricket_profile2.jpg"
+        ),
+        getPlayer(
+          "Anuj",
+          "23",
+          "Bowler",
+          "./../../img/profile/cricket/bowler2.jpeg"
+        ),
+        getPlayer(
+          "Siddarth",
+          "18",
+          "Wicket Keeper",
+          "./../../img/profile/cricket/cricket_profile4.jpeg"
+        ),
       ]),
       getSports("Football", [
         getPlayer("player1ff", "18", "Role1", "./../../img/solid.png"),
