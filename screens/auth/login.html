@@ -41,7 +41,6 @@
             class="form-control"
             id="password"
             placeholder="Enter password"
-            required
           />
         </div>
         <div class="mb-3 form-check">
@@ -49,7 +48,13 @@
           <label class="form-check-label" for="check-log">Keep logged in</label>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-primary">Login</button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="handleAuthLogin(this.form)"
+          >
+            Login
+          </button>
         </div>
 
         <p class="d-flex justify-content-center mt-3">
