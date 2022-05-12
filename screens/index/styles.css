@@ -3,8 +3,7 @@ body {
 }
 
 #main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 140px 0px;
 }
 
 #manager-features .card,
