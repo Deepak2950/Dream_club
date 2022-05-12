@@ -2,11 +2,6 @@ nav {
   background-color: rgb(206, 214, 207);
 }
 
-nav a u:hover,
-nav a span:hover {
-  color: rgb(13, 110, 253);
-}
-
 body {
   background-color: rgb(225, 232, 226);
 }
